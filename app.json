@@ -1,0 +1,32 @@
+{
+  "name": "Telegram_Bot",
+  "description": "Öyrətmək məqsədləri üçün sadə bir telegram bot.",
+  "repository": "https://github.com/sirincay2/SadeTelegramBotu",
+  "logo": "https://avatars.githubusercontent.com/u/71149025",
+  "keywords": ["telegram", "bot"],
+  "env": {
+    "BOT_API": {
+      "description": "@BotFather'dan yaratdığınız botun tokeni.",
+      "value": ""
+    },
+    "URL": {
+      "description": "sadebot əvəzinə Heroku proqram adını yazın.",
+      "value": "https://sade.herokuapp.com/"
+    },
+    "PORT": {
+      "description": "Bu qalsın toxunma.",
+      "value": "80",
+      "required": false
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  }
+}
